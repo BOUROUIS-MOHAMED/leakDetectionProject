@@ -1,0 +1,469 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\mohaa\\Desktop\\leakDetectionProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{975B840B-EEC0-49EE-AF5A-21AD77D121AC}|LeakDetectionDashboard\\LeakDetectionDashboard.csproj|c:\\users\\mohaa\\desktop\\leakdetectionproject\\leakdetectiondashboard\\services\\leakdetectionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{975B840B-EEC0-49EE-AF5A-21AD77D121AC}|LeakDetectionDashboard\\LeakDetectionDashboard.csproj|solutionrelative:leakdetectiondashboard\\services\\leakdetectionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{975B840B-EEC0-49EE-AF5A-21AD77D121AC}|LeakDetectionDashboard\\LeakDetectionDashboard.csproj|c:\\users\\mohaa\\desktop\\leakdetectionproject\\leakdetectiondashboard\\services\\fakeiotclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{975B840B-EEC0-49EE-AF5A-21AD77D121AC}|LeakDetectionDashboard\\LeakDetectionDashboard.csproj|solutionrelative:leakdetectiondashboard\\services\\fakeiotclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{975B840B-EEC0-49EE-AF5A-21AD77D121AC}|LeakDetectionDashboard\\LeakDetectionDashboard.csproj|c:\\users\\mohaa\\desktop\\leakdetectionproject\\leakdetectiondashboard\\services\\leakdetectionmodelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{975B840B-EEC0-49EE-AF5A-21AD77D121AC}|LeakDetectionDashboard\\LeakDetectionDashboard.csproj|solutionrelative:leakdetectiondashboard\\services\\leakdetectionmodelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{975B840B-EEC0-49EE-AF5A-21AD77D121AC}|LeakDetectionDashboard\\LeakDetectionDashboard.csproj|c:\\users\\mohaa\\desktop\\leakdetectionproject\\leakdetectiondashboard\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{975B840B-EEC0-49EE-AF5A-21AD77D121AC}|LeakDetectionDashboard\\LeakDetectionDashboard.csproj|solutionrelative:leakdetectiondashboard\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{975B840B-EEC0-49EE-AF5A-21AD77D121AC}|LeakDetectionDashboard\\LeakDetectionDashboard.csproj|c:\\users\\mohaa\\desktop\\leakdetectionproject\\leakdetectiondashboard\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{975B840B-EEC0-49EE-AF5A-21AD77D121AC}|LeakDetectionDashboard\\LeakDetectionDashboard.csproj|solutionrelative:leakdetectiondashboard\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{975B840B-EEC0-49EE-AF5A-21AD77D121AC}|LeakDetectionDashboard\\LeakDetectionDashboard.csproj|c:\\users\\mohaa\\desktop\\leakdetectionproject\\leakdetectiondashboard\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{975B840B-EEC0-49EE-AF5A-21AD77D121AC}|LeakDetectionDashboard\\LeakDetectionDashboard.csproj|solutionrelative:leakdetectiondashboard\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{975B840B-EEC0-49EE-AF5A-21AD77D121AC}|LeakDetectionDashboard\\LeakDetectionDashboard.csproj|c:\\users\\mohaa\\desktop\\leakdetectionproject\\leakdetectiondashboard\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{975B840B-EEC0-49EE-AF5A-21AD77D121AC}|LeakDetectionDashboard\\LeakDetectionDashboard.csproj|solutionrelative:leakdetectiondashboard\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{975B840B-EEC0-49EE-AF5A-21AD77D121AC}|LeakDetectionDashboard\\LeakDetectionDashboard.csproj|c:\\users\\mohaa\\desktop\\leakdetectionproject\\leakdetectiondashboard\\pages\\settingspage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{975B840B-EEC0-49EE-AF5A-21AD77D121AC}|LeakDetectionDashboard\\LeakDetectionDashboard.csproj|solutionrelative:leakdetectiondashboard\\pages\\settingspage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{975B840B-EEC0-49EE-AF5A-21AD77D121AC}|LeakDetectionDashboard\\LeakDetectionDashboard.csproj|c:\\users\\mohaa\\desktop\\leakdetectionproject\\leakdetectiondashboard\\services\\settingsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{975B840B-EEC0-49EE-AF5A-21AD77D121AC}|LeakDetectionDashboard\\LeakDetectionDashboard.csproj|solutionrelative:leakdetectiondashboard\\services\\settingsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{975B840B-EEC0-49EE-AF5A-21AD77D121AC}|LeakDetectionDashboard\\LeakDetectionDashboard.csproj|c:\\users\\mohaa\\desktop\\leakdetectionproject\\leakdetectiondashboard\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{975B840B-EEC0-49EE-AF5A-21AD77D121AC}|LeakDetectionDashboard\\LeakDetectionDashboard.csproj|solutionrelative:leakdetectiondashboard\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{975B840B-EEC0-49EE-AF5A-21AD77D121AC}|LeakDetectionDashboard\\LeakDetectionDashboard.csproj|c:\\users\\mohaa\\desktop\\leakdetectionproject\\leakdetectiondashboard\\data\\designtimedbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{975B840B-EEC0-49EE-AF5A-21AD77D121AC}|LeakDetectionDashboard\\LeakDetectionDashboard.csproj|solutionrelative:leakdetectiondashboard\\data\\designtimedbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{975B840B-EEC0-49EE-AF5A-21AD77D121AC}|LeakDetectionDashboard\\LeakDetectionDashboard.csproj|c:\\users\\mohaa\\desktop\\leakdetectionproject\\leakdetectiondashboard\\shared\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{975B840B-EEC0-49EE-AF5A-21AD77D121AC}|LeakDetectionDashboard\\LeakDetectionDashboard.csproj|solutionrelative:leakdetectiondashboard\\shared\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{975B840B-EEC0-49EE-AF5A-21AD77D121AC}|LeakDetectionDashboard\\LeakDetectionDashboard.csproj|c:\\users\\mohaa\\desktop\\leakdetectionproject\\leakdetectiondashboard\\shared\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{975B840B-EEC0-49EE-AF5A-21AD77D121AC}|LeakDetectionDashboard\\LeakDetectionDashboard.csproj|solutionrelative:leakdetectiondashboard\\shared\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{975B840B-EEC0-49EE-AF5A-21AD77D121AC}|LeakDetectionDashboard\\LeakDetectionDashboard.csproj|c:\\users\\mohaa\\desktop\\leakdetectionproject\\leakdetectiondashboard\\pages\\architecture.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{975B840B-EEC0-49EE-AF5A-21AD77D121AC}|LeakDetectionDashboard\\LeakDetectionDashboard.csproj|solutionrelative:leakdetectiondashboard\\pages\\architecture.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{975B840B-EEC0-49EE-AF5A-21AD77D121AC}|LeakDetectionDashboard\\LeakDetectionDashboard.csproj|c:\\users\\mohaa\\desktop\\leakdetectionproject\\leakdetectiondashboard\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{975B840B-EEC0-49EE-AF5A-21AD77D121AC}|LeakDetectionDashboard\\LeakDetectionDashboard.csproj|solutionrelative:leakdetectiondashboard\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{975B840B-EEC0-49EE-AF5A-21AD77D121AC}|LeakDetectionDashboard\\LeakDetectionDashboard.csproj|c:\\users\\mohaa\\desktop\\leakdetectionproject\\leakdetectiondashboard\\wwwroot\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{975B840B-EEC0-49EE-AF5A-21AD77D121AC}|LeakDetectionDashboard\\LeakDetectionDashboard.csproj|solutionrelative:leakdetectiondashboard\\wwwroot\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{975B840B-EEC0-49EE-AF5A-21AD77D121AC}|LeakDetectionDashboard\\LeakDetectionDashboard.csproj|c:\\users\\mohaa\\desktop\\leakdetectionproject\\leakdetectiondashboard\\shared\\riskbadge.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{975B840B-EEC0-49EE-AF5A-21AD77D121AC}|LeakDetectionDashboard\\LeakDetectionDashboard.csproj|solutionrelative:leakdetectiondashboard\\shared\\riskbadge.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{975B840B-EEC0-49EE-AF5A-21AD77D121AC}|LeakDetectionDashboard\\LeakDetectionDashboard.csproj|c:\\users\\mohaa\\desktop\\leakdetectionproject\\leakdetectiondashboard\\pages\\logs.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{975B840B-EEC0-49EE-AF5A-21AD77D121AC}|LeakDetectionDashboard\\LeakDetectionDashboard.csproj|solutionrelative:leakdetectiondashboard\\pages\\logs.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{975B840B-EEC0-49EE-AF5A-21AD77D121AC}|LeakDetectionDashboard\\LeakDetectionDashboard.csproj|c:\\users\\mohaa\\desktop\\leakdetectionproject\\leakdetectiondashboard\\pages\\history.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{975B840B-EEC0-49EE-AF5A-21AD77D121AC}|LeakDetectionDashboard\\LeakDetectionDashboard.csproj|solutionrelative:leakdetectiondashboard\\pages\\history.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{975B840B-EEC0-49EE-AF5A-21AD77D121AC}|LeakDetectionDashboard\\LeakDetectionDashboard.csproj|c:\\users\\mohaa\\desktop\\leakdetectionproject\\leakdetectiondashboard\\background\\sensorpollingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{975B840B-EEC0-49EE-AF5A-21AD77D121AC}|LeakDetectionDashboard\\LeakDetectionDashboard.csproj|solutionrelative:leakdetectiondashboard\\background\\sensorpollingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{975B840B-EEC0-49EE-AF5A-21AD77D121AC}|LeakDetectionDashboard\\LeakDetectionDashboard.csproj|c:\\users\\mohaa\\desktop\\leakdetectionproject\\leakdetectiondashboard\\services\\loggingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{975B840B-EEC0-49EE-AF5A-21AD77D121AC}|LeakDetectionDashboard\\LeakDetectionDashboard.csproj|solutionrelative:leakdetectiondashboard\\services\\loggingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{975B840B-EEC0-49EE-AF5A-21AD77D121AC}|LeakDetectionDashboard\\LeakDetectionDashboard.csproj|c:\\users\\mohaa\\desktop\\leakdetectionproject\\leakdetectiondashboard\\models\\sensor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{975B840B-EEC0-49EE-AF5A-21AD77D121AC}|LeakDetectionDashboard\\LeakDetectionDashboard.csproj|solutionrelative:leakdetectiondashboard\\models\\sensor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{975B840B-EEC0-49EE-AF5A-21AD77D121AC}|LeakDetectionDashboard\\LeakDetectionDashboard.csproj|c:\\users\\mohaa\\desktop\\leakdetectionproject\\leakdetectiondashboard\\models\\pipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{975B840B-EEC0-49EE-AF5A-21AD77D121AC}|LeakDetectionDashboard\\LeakDetectionDashboard.csproj|solutionrelative:leakdetectiondashboard\\models\\pipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{975B840B-EEC0-49EE-AF5A-21AD77D121AC}|LeakDetectionDashboard\\LeakDetectionDashboard.csproj|c:\\users\\mohaa\\desktop\\leakdetectionproject\\leakdetectiondashboard\\models\\logentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{975B840B-EEC0-49EE-AF5A-21AD77D121AC}|LeakDetectionDashboard\\LeakDetectionDashboard.csproj|solutionrelative:leakdetectiondashboard\\models\\logentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{975B840B-EEC0-49EE-AF5A-21AD77D121AC}|LeakDetectionDashboard\\LeakDetectionDashboard.csproj|c:\\users\\mohaa\\desktop\\leakdetectionproject\\leakdetectiondashboard\\models\\leakpredictionresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{975B840B-EEC0-49EE-AF5A-21AD77D121AC}|LeakDetectionDashboard\\LeakDetectionDashboard.csproj|solutionrelative:leakdetectiondashboard\\models\\leakpredictionresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{975B840B-EEC0-49EE-AF5A-21AD77D121AC}|LeakDetectionDashboard\\LeakDetectionDashboard.csproj|c:\\users\\mohaa\\desktop\\leakdetectionproject\\leakdetectiondashboard\\models\\ml\\leaktrainingrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{975B840B-EEC0-49EE-AF5A-21AD77D121AC}|LeakDetectionDashboard\\LeakDetectionDashboard.csproj|solutionrelative:leakdetectiondashboard\\models\\ml\\leaktrainingrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{975B840B-EEC0-49EE-AF5A-21AD77D121AC}|LeakDetectionDashboard\\LeakDetectionDashboard.csproj|c:\\users\\mohaa\\desktop\\leakdetectionproject\\leakdetectiondashboard\\models\\ml\\leakprediction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{975B840B-EEC0-49EE-AF5A-21AD77D121AC}|LeakDetectionDashboard\\LeakDetectionDashboard.csproj|solutionrelative:leakdetectiondashboard\\models\\ml\\leakprediction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{975B840B-EEC0-49EE-AF5A-21AD77D121AC}|LeakDetectionDashboard\\LeakDetectionDashboard.csproj|c:\\users\\mohaa\\desktop\\leakdetectionproject\\leakdetectiondashboard\\models\\api\\iotreadingresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{975B840B-EEC0-49EE-AF5A-21AD77D121AC}|LeakDetectionDashboard\\LeakDetectionDashboard.csproj|solutionrelative:leakdetectiondashboard\\models\\api\\iotreadingresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\mohaa\\Desktop\\leakDetectionProject\\LeakDetectionDashboard\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "LeakDetectionDashboard\\Components\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\mohaa\\Desktop\\leakDetectionProject\\LeakDetectionDashboard\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "LeakDetectionDashboard\\Components\\Pages\\Home.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-12T11:46:58.085Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LeakDetectionModelService.cs",
+              "DocumentMoniker": "C:\\Users\\mohaa\\Desktop\\leakDetectionProject\\LeakDetectionDashboard\\Services\\LeakDetectionModelService.cs",
+              "RelativeDocumentMoniker": "LeakDetectionDashboard\\Services\\LeakDetectionModelService.cs",
+              "ToolTip": "C:\\Users\\mohaa\\Desktop\\leakDetectionProject\\LeakDetectionDashboard\\Services\\LeakDetectionModelService.cs",
+              "RelativeToolTip": "LeakDetectionDashboard\\Services\\LeakDetectionModelService.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAgwGcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T22:52:03.321Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\mohaa\\Desktop\\leakDetectionProject\\LeakDetectionDashboard\\Program.cs",
+              "RelativeDocumentMoniker": "LeakDetectionDashboard\\Program.cs",
+              "ToolTip": "C:\\Users\\mohaa\\Desktop\\leakDetectionProject\\LeakDetectionDashboard\\Program.cs",
+              "RelativeToolTip": "LeakDetectionDashboard\\Program.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAkwDYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T23:45:07.164Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "App.razor",
+              "DocumentMoniker": "C:\\Users\\mohaa\\Desktop\\leakDetectionProject\\LeakDetectionDashboard\\Components\\App.razor",
+              "RelativeDocumentMoniker": "LeakDetectionDashboard\\Components\\App.razor",
+              "ToolTip": "C:\\Users\\mohaa\\Desktop\\leakDetectionProject\\LeakDetectionDashboard\\Components\\App.razor",
+              "RelativeToolTip": "LeakDetectionDashboard\\Components\\App.razor",
+              "ViewState": "AgIAABIAAAAAAAAAAAAkwCIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-09T23:54:27.336Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.razor",
+              "DocumentMoniker": "C:\\Users\\mohaa\\Desktop\\leakDetectionProject\\LeakDetectionDashboard\\Pages\\Index.razor",
+              "RelativeDocumentMoniker": "LeakDetectionDashboard\\Pages\\Index.razor",
+              "ToolTip": "C:\\Users\\mohaa\\Desktop\\leakDetectionProject\\LeakDetectionDashboard\\Pages\\Index.razor",
+              "RelativeToolTip": "LeakDetectionDashboard\\Pages\\Index.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-09T23:30:33.424Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\mohaa\\Desktop\\leakDetectionProject\\LeakDetectionDashboard\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "LeakDetectionDashboard\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\mohaa\\Desktop\\leakDetectionProject\\LeakDetectionDashboard\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "LeakDetectionDashboard\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAowC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T22:50:23.095Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FakeIotClient.cs",
+              "DocumentMoniker": "C:\\Users\\mohaa\\Desktop\\leakDetectionProject\\LeakDetectionDashboard\\Services\\FakeIotClient.cs",
+              "RelativeDocumentMoniker": "LeakDetectionDashboard\\Services\\FakeIotClient.cs",
+              "ToolTip": "C:\\Users\\mohaa\\Desktop\\leakDetectionProject\\LeakDetectionDashboard\\Services\\FakeIotClient.cs",
+              "RelativeToolTip": "LeakDetectionDashboard\\Services\\FakeIotClient.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAowGcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T22:51:56.004Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LeakDetectionService.cs",
+              "DocumentMoniker": "C:\\Users\\mohaa\\Desktop\\leakDetectionProject\\LeakDetectionDashboard\\Services\\LeakDetectionService.cs",
+              "RelativeDocumentMoniker": "LeakDetectionDashboard\\Services\\LeakDetectionService.cs",
+              "ToolTip": "C:\\Users\\mohaa\\Desktop\\leakDetectionProject\\LeakDetectionDashboard\\Services\\LeakDetectionService.cs",
+              "RelativeToolTip": "LeakDetectionDashboard\\Services\\LeakDetectionService.cs",
+              "ViewState": "AgIAAAIDAAAAAAAAAAAAAA4DAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T22:52:10.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DesignTimeDbContextFactory.cs",
+              "DocumentMoniker": "C:\\Users\\mohaa\\Desktop\\leakDetectionProject\\LeakDetectionDashboard\\Data\\DesignTimeDbContextFactory.cs",
+              "RelativeDocumentMoniker": "LeakDetectionDashboard\\Data\\DesignTimeDbContextFactory.cs",
+              "ToolTip": "C:\\Users\\mohaa\\Desktop\\leakDetectionProject\\LeakDetectionDashboard\\Data\\DesignTimeDbContextFactory.cs",
+              "RelativeToolTip": "LeakDetectionDashboard\\Data\\DesignTimeDbContextFactory.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAgwBQAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T00:41:02.901Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SettingsService.cs",
+              "DocumentMoniker": "C:\\Users\\mohaa\\Desktop\\leakDetectionProject\\LeakDetectionDashboard\\Services\\SettingsService.cs",
+              "RelativeDocumentMoniker": "LeakDetectionDashboard\\Services\\SettingsService.cs",
+              "ToolTip": "C:\\Users\\mohaa\\Desktop\\leakDetectionProject\\LeakDetectionDashboard\\Services\\SettingsService.cs",
+              "RelativeToolTip": "LeakDetectionDashboard\\Services\\SettingsService.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAowEAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T22:52:25.455Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SettingsPage.razor",
+              "DocumentMoniker": "C:\\Users\\mohaa\\Desktop\\leakDetectionProject\\LeakDetectionDashboard\\Pages\\SettingsPage.razor",
+              "RelativeDocumentMoniker": "LeakDetectionDashboard\\Pages\\SettingsPage.razor",
+              "ToolTip": "C:\\Users\\mohaa\\Desktop\\leakDetectionProject\\LeakDetectionDashboard\\Pages\\SettingsPage.razor",
+              "RelativeToolTip": "LeakDetectionDashboard\\Pages\\SettingsPage.razor",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAowHoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-09T23:29:33.938Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\Users\\mohaa\\Desktop\\leakDetectionProject\\LeakDetectionDashboard\\Shared\\MainLayout.razor",
+              "RelativeDocumentMoniker": "LeakDetectionDashboard\\Shared\\MainLayout.razor",
+              "ToolTip": "C:\\Users\\mohaa\\Desktop\\leakDetectionProject\\LeakDetectionDashboard\\Shared\\MainLayout.razor",
+              "RelativeToolTip": "LeakDetectionDashboard\\Shared\\MainLayout.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-09T23:30:57.651Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\mohaa\\Desktop\\leakDetectionProject\\LeakDetectionDashboard\\Shared\\NavMenu.razor",
+              "RelativeDocumentMoniker": "LeakDetectionDashboard\\Shared\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\mohaa\\Desktop\\leakDetectionProject\\LeakDetectionDashboard\\Shared\\NavMenu.razor",
+              "RelativeToolTip": "LeakDetectionDashboard\\Shared\\NavMenu.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-09T22:52:44.034Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Architecture.razor",
+              "DocumentMoniker": "C:\\Users\\mohaa\\Desktop\\leakDetectionProject\\LeakDetectionDashboard\\Pages\\Architecture.razor",
+              "RelativeDocumentMoniker": "LeakDetectionDashboard\\Pages\\Architecture.razor",
+              "ToolTip": "C:\\Users\\mohaa\\Desktop\\leakDetectionProject\\LeakDetectionDashboard\\Pages\\Architecture.razor",
+              "RelativeToolTip": "LeakDetectionDashboard\\Pages\\Architecture.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-09T23:02:21.276Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "app.css",
+              "DocumentMoniker": "C:\\Users\\mohaa\\Desktop\\leakDetectionProject\\LeakDetectionDashboard\\wwwroot\\css\\app.css",
+              "RelativeDocumentMoniker": "LeakDetectionDashboard\\wwwroot\\css\\app.css",
+              "ToolTip": "C:\\Users\\mohaa\\Desktop\\leakDetectionProject\\LeakDetectionDashboard\\wwwroot\\css\\app.css",
+              "RelativeToolTip": "LeakDetectionDashboard\\wwwroot\\css\\app.css",
+              "ViewState": "AgIAAEcCAAAAAAAAAAAAwOkCAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-12-09T23:31:28.238Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "app.css",
+              "DocumentMoniker": "C:\\Users\\mohaa\\Desktop\\leakDetectionProject\\LeakDetectionDashboard\\wwwroot\\app.css",
+              "RelativeDocumentMoniker": "LeakDetectionDashboard\\wwwroot\\app.css",
+              "ToolTip": "C:\\Users\\mohaa\\Desktop\\leakDetectionProject\\LeakDetectionDashboard\\wwwroot\\app.css",
+              "RelativeToolTip": "LeakDetectionDashboard\\wwwroot\\app.css",
+              "ViewState": "AgIAANcCAAAAAAAAAAAAwPECAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-12-09T23:38:12.07Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "RiskBadge.razor",
+              "DocumentMoniker": "C:\\Users\\mohaa\\Desktop\\leakDetectionProject\\LeakDetectionDashboard\\Shared\\RiskBadge.razor",
+              "RelativeDocumentMoniker": "LeakDetectionDashboard\\Shared\\RiskBadge.razor",
+              "ToolTip": "C:\\Users\\mohaa\\Desktop\\leakDetectionProject\\LeakDetectionDashboard\\Shared\\RiskBadge.razor",
+              "RelativeToolTip": "LeakDetectionDashboard\\Shared\\RiskBadge.razor",
+              "ViewState": "AgIAABYAAAAAAAAAAAAowC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-09T22:52:36.616Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Logs.razor",
+              "DocumentMoniker": "C:\\Users\\mohaa\\Desktop\\leakDetectionProject\\LeakDetectionDashboard\\Pages\\Logs.razor",
+              "RelativeDocumentMoniker": "LeakDetectionDashboard\\Pages\\Logs.razor",
+              "ToolTip": "C:\\Users\\mohaa\\Desktop\\leakDetectionProject\\LeakDetectionDashboard\\Pages\\Logs.razor",
+              "RelativeToolTip": "LeakDetectionDashboard\\Pages\\Logs.razor",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAowEcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-09T23:30:49.062Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "History.razor",
+              "DocumentMoniker": "C:\\Users\\mohaa\\Desktop\\leakDetectionProject\\LeakDetectionDashboard\\Pages\\History.razor",
+              "RelativeDocumentMoniker": "LeakDetectionDashboard\\Pages\\History.razor",
+              "ToolTip": "C:\\Users\\mohaa\\Desktop\\leakDetectionProject\\LeakDetectionDashboard\\Pages\\History.razor",
+              "RelativeToolTip": "LeakDetectionDashboard\\Pages\\History.razor",
+              "ViewState": "AgIAALEAAAAAAAAAAAAowMoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-09T23:30:27.581Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "SensorPollingService.cs",
+              "DocumentMoniker": "C:\\Users\\mohaa\\Desktop\\leakDetectionProject\\LeakDetectionDashboard\\Background\\SensorPollingService.cs",
+              "RelativeDocumentMoniker": "LeakDetectionDashboard\\Background\\SensorPollingService.cs",
+              "ToolTip": "C:\\Users\\mohaa\\Desktop\\leakDetectionProject\\LeakDetectionDashboard\\Background\\SensorPollingService.cs",
+              "RelativeToolTip": "LeakDetectionDashboard\\Background\\SensorPollingService.cs",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAowH0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T22:48:59.685Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "LoggingService.cs",
+              "DocumentMoniker": "C:\\Users\\mohaa\\Desktop\\leakDetectionProject\\LeakDetectionDashboard\\Services\\LoggingService.cs",
+              "RelativeDocumentMoniker": "LeakDetectionDashboard\\Services\\LoggingService.cs",
+              "ToolTip": "C:\\Users\\mohaa\\Desktop\\leakDetectionProject\\LeakDetectionDashboard\\Services\\LoggingService.cs",
+              "RelativeToolTip": "LeakDetectionDashboard\\Services\\LoggingService.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwCgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T22:52:18.15Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Sensor.cs",
+              "DocumentMoniker": "C:\\Users\\mohaa\\Desktop\\leakDetectionProject\\LeakDetectionDashboard\\Models\\Sensor.cs",
+              "RelativeDocumentMoniker": "LeakDetectionDashboard\\Models\\Sensor.cs",
+              "ToolTip": "C:\\Users\\mohaa\\Desktop\\leakDetectionProject\\LeakDetectionDashboard\\Models\\Sensor.cs",
+              "RelativeToolTip": "LeakDetectionDashboard\\Models\\Sensor.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAcwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T22:51:46.621Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Pipe.cs",
+              "DocumentMoniker": "C:\\Users\\mohaa\\Desktop\\leakDetectionProject\\LeakDetectionDashboard\\Models\\Pipe.cs",
+              "RelativeDocumentMoniker": "LeakDetectionDashboard\\Models\\Pipe.cs",
+              "ToolTip": "C:\\Users\\mohaa\\Desktop\\leakDetectionProject\\LeakDetectionDashboard\\Models\\Pipe.cs",
+              "RelativeToolTip": "LeakDetectionDashboard\\Models\\Pipe.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAA4wBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T22:51:40.34Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "LogEntry.cs",
+              "DocumentMoniker": "C:\\Users\\mohaa\\Desktop\\leakDetectionProject\\LeakDetectionDashboard\\Models\\LogEntry.cs",
+              "RelativeDocumentMoniker": "LeakDetectionDashboard\\Models\\LogEntry.cs",
+              "ToolTip": "C:\\Users\\mohaa\\Desktop\\leakDetectionProject\\LeakDetectionDashboard\\Models\\LogEntry.cs",
+              "RelativeToolTip": "LeakDetectionDashboard\\Models\\LogEntry.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T22:51:32.61Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "LeakPredictionResult.cs",
+              "DocumentMoniker": "C:\\Users\\mohaa\\Desktop\\leakDetectionProject\\LeakDetectionDashboard\\Models\\LeakPredictionResult.cs",
+              "RelativeDocumentMoniker": "LeakDetectionDashboard\\Models\\LeakPredictionResult.cs",
+              "ToolTip": "C:\\Users\\mohaa\\Desktop\\leakDetectionProject\\LeakDetectionDashboard\\Models\\LeakPredictionResult.cs",
+              "RelativeToolTip": "LeakDetectionDashboard\\Models\\LeakPredictionResult.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAA3wB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T22:51:12.466Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "LeakTrainingRecord.cs",
+              "DocumentMoniker": "C:\\Users\\mohaa\\Desktop\\leakDetectionProject\\LeakDetectionDashboard\\Models\\ML\\LeakTrainingRecord.cs",
+              "RelativeDocumentMoniker": "LeakDetectionDashboard\\Models\\ML\\LeakTrainingRecord.cs",
+              "ToolTip": "C:\\Users\\mohaa\\Desktop\\leakDetectionProject\\LeakDetectionDashboard\\Models\\ML\\LeakTrainingRecord.cs",
+              "RelativeToolTip": "LeakDetectionDashboard\\Models\\ML\\LeakTrainingRecord.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAEwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T22:51:02.124Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "LeakPrediction.cs",
+              "DocumentMoniker": "C:\\Users\\mohaa\\Desktop\\leakDetectionProject\\LeakDetectionDashboard\\Models\\ML\\LeakPrediction.cs",
+              "RelativeDocumentMoniker": "LeakDetectionDashboard\\Models\\ML\\LeakPrediction.cs",
+              "ToolTip": "C:\\Users\\mohaa\\Desktop\\leakDetectionProject\\LeakDetectionDashboard\\Models\\ML\\LeakPrediction.cs",
+              "RelativeToolTip": "LeakDetectionDashboard\\Models\\ML\\LeakPrediction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T22:50:54.964Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "IoTReadingResponse.cs",
+              "DocumentMoniker": "C:\\Users\\mohaa\\Desktop\\leakDetectionProject\\LeakDetectionDashboard\\Models\\Api\\IoTReadingResponse.cs",
+              "RelativeDocumentMoniker": "LeakDetectionDashboard\\Models\\Api\\IoTReadingResponse.cs",
+              "ToolTip": "C:\\Users\\mohaa\\Desktop\\leakDetectionProject\\LeakDetectionDashboard\\Models\\Api\\IoTReadingResponse.cs",
+              "RelativeToolTip": "LeakDetectionDashboard\\Models\\Api\\IoTReadingResponse.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAuwMwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T22:50:43.88Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+﻿@using Microsoft.AspNetCore.Components.Routing
+
+<nav class="nav-menu">
+    <ul class="nav-list">
+        <li>
+            <NavLink href="architecture"
+                     Match="NavLinkMatch.All"
+                     class="nav-link"
+                     ActiveClass="nav-link-active">
+                <span class="nav-icon">📊</span>
+                <span class="nav-text">
+                    Architecture
+                    <span class="nav-text-sub">Zones, pipes &amp; risk</span>
+                </span>
+            </NavLink>
+        </li>
+        <li>
+            <NavLink href="history"
+                     class="nav-link"
+                     ActiveClass="nav-link-active">
+                <span class="nav-icon">⏱️</span>
+                <span class="nav-text">
+                    History
+                    <span class="nav-text-sub">Snapshots &amp; trends</span>
+                </span>
+            </NavLink>
+        </li>
+        <li>
+            <NavLink href="settings"
+                     class="nav-link"
+                     ActiveClass="nav-link-active">
+                <span class="nav-icon">⚙️</span>
+                <span class="nav-text">
+                    Settings
+                    <span class="nav-text-sub">Polling interval</span>
+                </span>
+            </NavLink>
+        </li>
+        <li>
+            <NavLink href="logs"
+                     class="nav-link"
+                     ActiveClass="nav-link-active">
+                <span class="nav-icon">📜</span>
+                <span class="nav-text">
+                    Logs
+                    <span class="nav-text-sub">Background activity</span>
+                </span>
+            </NavLink>
+        </li>
+    </ul>
+</nav>

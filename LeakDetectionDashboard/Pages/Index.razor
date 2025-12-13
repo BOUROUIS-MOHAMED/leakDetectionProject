@@ -1,0 +1,18 @@
+﻿@page "/"
+@page "/index"
+
+@inject NavigationManager Nav
+
+<div class="card card-surface">
+    <p class="muted">
+        Redirecting to architecture view…
+    </p>
+</div>
+
+@code {
+    protected override void OnInitialized()
+    {
+        // Always land on the main architecture page
+        Nav.NavigateTo("architecture", true);
+    }
+}

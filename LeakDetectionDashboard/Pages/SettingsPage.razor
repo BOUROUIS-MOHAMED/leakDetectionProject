@@ -1,0 +1,122 @@
+﻿@page "/settings"
+@using LeakDetectionDashboard.Services
+@inject SettingsService SettingsService
+
+<div class="page-header">
+    <div>
+        <h2 class="page-title">System settings</h2>
+        <p class="page-subtitle">
+            Control how often the dashboard polls the IoT backend for fresh sensor data.
+        </p>
+    </div>
+</div>
+
+@if (_loading)
+{
+    <div class="card card-surface">
+        <p class="muted">Loading settings…</p>
+    </div>
+}
+else
+{
+    <div class="card card-surface settings-layout">
+        <div class="settings-main">
+            <h3 class="section-title">Polling interval</h3>
+            <p class="muted">
+                The background service will automatically fetch new readings from the fake IoT backend
+                using this interval. Smaller values = more “live” behaviour.
+            </p>
+
+            <div class="settings-input-row">
+                <label class="field-label" for="pollInterval">Poll every</label>
+
+                <input id="pollInterval"
+                       type="number"
+                       min="1"
+                       max="60"
+                       class="input-number"
+                       @bind="_pollInterval" />
+
+                <span class="field-suffix">minutes</span>
+            </div>
+
+            <p class="muted small-text">
+                Current value in database:
+                <strong>@_currentIntervalFromDb</strong> minute(s).
+            </p>
+
+            <button class="btn btn-primary"
+                    @onclick="Save"
+                    disabled="@_saving">
+                @(_saving ? "Saving…" : "Save changes")
+            </button>
+
+            @if (!string.IsNullOrEmpty(_status))
+            {
+                <div class="@_statusCssClass">
+                    @_status
+                </div>
+            }
+        </div>
+
+        <div class="settings-aside">
+            <div class="hint-badge">HOW IT WORKS</div>
+            <p class="muted">
+                The new interval is stored in the database.
+                The background polling service reads it on its next cycle – you don’t need to restart the app.
+            </p>
+            <ul class="hint-list">
+                <li>Use <strong>1–2 minutes</strong> during demos or debugging.</li>
+                <li>Use <strong>5+ minutes</strong> for more realistic, “production-like” behaviour.</li>
+            </ul>
+        </div>
+    </div>
+}
+
+@code {
+    private bool _loading = true;
+    private bool _saving;
+
+    // bound to the input
+    private int _pollInterval = 5;
+
+    // actual value in DB
+    private int _currentIntervalFromDb = 5;
+
+    private string? _status;
+    private string _statusCssClass = "status-pill status-info";
+
+    protected override async Task OnInitializedAsync()
+    {
+        _currentIntervalFromDb = await SettingsService.GetPollIntervalMinutesAsync();
+        _pollInterval = _currentIntervalFromDb;
+        _loading = false;
+    }
+
+    private async Task Save()
+    {
+        _saving = true;
+        _status = null;
+
+        try
+        {
+            await SettingsService.UpdatePollIntervalMinutesAsync(_pollInterval);
+
+            // Read again from DB to be 100% sure what is stored
+            _currentIntervalFromDb = await SettingsService.GetPollIntervalMinutesAsync();
+            _pollInterval = _currentIntervalFromDb;
+
+            _status = $"Poll interval saved: every {_currentIntervalFromDb} minute(s).";
+            _statusCssClass = "status-pill status-success";
+        }
+        catch (Exception ex)
+        {
+            _status = $"Failed to save settings: {ex.Message}";
+            _statusCssClass = "status-pill status-error";
+        }
+        finally
+        {
+            _saving = false;
+        }
+    }
+}

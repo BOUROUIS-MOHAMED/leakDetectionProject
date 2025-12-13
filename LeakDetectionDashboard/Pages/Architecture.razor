@@ -1,0 +1,178 @@
+﻿@page "/architecture"
+@using LeakDetectionDashboard.Data
+@using LeakDetectionDashboard.Models
+@using LeakDetectionDashboard.Services
+@using LeakDetectionDashboard.Shared
+@using Microsoft.EntityFrameworkCore
+@inject AppDbContext Db
+@inject LeakDetectionService LeakService
+
+<div class="page-header">
+    <div>
+        <h2 class="page-title">Network architecture &amp; leak risk</h2>
+        <p class="page-subtitle">
+            Visual overview of zones, pipes and sensors with their current leak probability.
+        </p>
+    </div>
+
+    @if (!_loading)
+    {
+        <div class="page-header-metrics">
+            <div class="metric-pill">
+                <span class="metric-label">Zones</span>
+                <span class="metric-value">@_totalZones</span>
+            </div>
+            <div class="metric-pill">
+                <span class="metric-label">Pipes</span>
+                <span class="metric-value">@_totalPipes</span>
+            </div>
+            <div class="metric-pill">
+                <span class="metric-label">Sensors</span>
+                <span class="metric-value">@_totalSensors</span>
+            </div>
+            <div class="metric-pill metric-pill-highlight">
+                <span class="metric-label">Highest leak risk</span>
+                <span class="metric-value">
+                    @(_maxLeakProbability * 100.0).ToString("F1")%
+                </span>
+            </div>
+        </div>
+    }
+</div>
+
+@if (_loading)
+{
+    <div class="card card-surface">
+        <p class="muted">Loading architecture and risk data…</p>
+    </div>
+}
+else if (_zones.Count == 0)
+{
+    <div class="card card-surface">
+        <p class="muted">No data yet. Waiting for the first IoT reading…</p>
+    </div>
+}
+else
+{
+    <div class="zones-grid">
+        @foreach (var zone in _zones)
+        {
+            var zoneRisk = GetZoneRisk(zone.Id);
+
+            <div class="zone-card">
+                <div class="zone-header">
+                    <div class="zone-title">
+                        <h3>@zone.Name</h3>
+                        <span class="zone-status @GetZoneStatusClass(zone.Status)">
+                            @zone.Status
+                        </span>
+                    </div>
+                    <RiskBadge Probability="zoneRisk" />
+                </div>
+
+                <div class="zone-body">
+                    @foreach (var pipe in zone.Pipes.OrderBy(p => p.Id))
+                    {
+                        var pipeRisk = GetPipeRisk(pipe.Id);
+
+                        <div class="pipe-card">
+                            <div class="pipe-header">
+                                <div>
+                                    <div class="pipe-name">@pipe.Name</div>
+                                    <div class="pipe-meta">
+                                        Pipe #@pipe.Id · @pipe.Sensors.Count sensor(s)
+                                    </div>
+                                </div>
+                                <RiskBadge Probability="pipeRisk" />
+                            </div>
+
+                            <ul class="sensor-list">
+                                @foreach (var sensor in pipe.Sensors.OrderBy(s => s.Id))
+                                {
+                                    <li class="sensor-item">
+                                        <div>
+                                            <span class="sensor-name">@sensor.Name</span>
+                                            <span class="sensor-location">@sensor.Location</span>
+                                        </div>
+                                        @if (sensor.IsWaterTap)
+                                        {
+                                            <span class="sensor-chip sensor-chip-tap">Tap</span>
+                                        }
+                                    </li>
+                                }
+                            </ul>
+                        </div>
+                    }
+                </div>
+            </div>
+        }
+    </div>
+}
+
+@code {
+    private bool _loading = true;
+    private List<Zone> _zones = new();
+    private List<LeakPredictionResult> _pipeRisks = new();
+
+    private int _totalZones;
+    private int _totalPipes;
+    private int _totalSensors;
+    private double _maxLeakProbability;
+
+    private Dictionary<int, double> _pipeRiskMap = new();
+    private Dictionary<int, double> _zoneRiskMap = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        _loading = true;
+
+        _zones = await Db.Zones
+            .Include(z => z.Pipes)
+                .ThenInclude(p => p.Sensors)
+            .OrderBy(z => z.Id)
+            .ToListAsync();
+
+        _pipeRisks = await LeakService.GetCurrentPipeRiskAsync();
+
+        _totalZones = _zones.Count;
+        _totalPipes = _zones.Sum(z => z.Pipes?.Count ?? 0);
+        _totalSensors = _zones.Sum(z => z.Pipes.Sum(p => p.Sensors?.Count ?? 0));
+
+        _pipeRiskMap = _pipeRisks.ToDictionary(p => p.PipeId, p => p.LeakProbability);
+
+        _zoneRiskMap = _zones.ToDictionary(z => z.Id, z => ComputeZoneRisk(z.Id));
+
+        _maxLeakProbability = _pipeRisks.Count == 0
+            ? 0.0
+            : _pipeRisks.Max(p => p.LeakProbability);
+
+        _loading = false;
+    }
+
+    private double GetPipeRisk(int pipeId)
+        => _pipeRiskMap.TryGetValue(pipeId, out var prob) ? prob : 0.0;
+
+    private double GetZoneRisk(int zoneId)
+        => _zoneRiskMap.TryGetValue(zoneId, out var prob) ? prob : 0.0;
+
+    private double ComputeZoneRisk(int zoneId)
+    {
+        var zone = _zones.First(z => z.Id == zoneId);
+        var pipeIds = zone.Pipes.Select(p => p.Id).ToList();
+
+        var risks = pipeIds
+            .Where(id => _pipeRiskMap.ContainsKey(id))
+            .Select(id => _pipeRiskMap[id])
+            .ToList();
+
+        return risks.Count == 0 ? 0.0 : risks.Max();
+    }
+
+    private string GetZoneStatusClass(string? status) =>
+        (status ?? "").ToLowerInvariant() switch
+        {
+            "warning" => "zone-status-warning",
+            "critical" => "zone-status-critical",
+            _ => "zone-status-normal"
+        };
+}

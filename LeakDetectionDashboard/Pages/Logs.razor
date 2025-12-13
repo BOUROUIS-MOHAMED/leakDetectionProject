@@ -1,0 +1,71 @@
+﻿@page "/logs"
+@using LeakDetectionDashboard.Data
+@using LeakDetectionDashboard.Models
+@using Microsoft.EntityFrameworkCore
+@inject AppDbContext Db
+
+<div class="page-header">
+    <div>
+        <h2 class="page-title">System logs</h2>
+        <p class="page-subtitle">
+            Internal events from the polling service, model predictions and IoT integration.
+        </p>
+    </div>
+</div>
+
+<div class="card card-surface">
+    @if (!_logs.Any())
+    {
+        <p class="muted">No logs recorded yet.</p>
+    }
+    else
+    {
+        <div class="table-wrapper">
+            <table class="table logs-table">
+                <thead>
+                    <tr>
+                        <th>Time (UTC)</th>
+                        <th>Level</th>
+                        <th>Message</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var log in _logs)
+                    {
+                        <tr>
+                            <td>@log.Timestamp.ToString("yyyy-MM-dd HH:mm:ss")</td>
+                            <td>
+                                <span class="@GetLevelClass(log.Level)">
+                                    @log.Level
+                                </span>
+                            </td>
+                            <td class="logs-message-cell">
+                                @log.Message
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+</div>
+
+@code {
+    private List<LogEntry> _logs = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        _logs = await Db.LogEntries
+            .OrderByDescending(l => l.Timestamp)
+            .Take(200)
+            .ToListAsync();
+    }
+
+    private string GetLevelClass(string? level) =>
+        (level ?? "").ToLowerInvariant() switch
+        {
+            "error" => "log-level log-level-error",
+            "warning" => "log-level log-level-warning",
+            _ => "log-level log-level-info"
+        };
+}

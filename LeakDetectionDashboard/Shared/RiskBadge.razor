@@ -1,0 +1,47 @@
+﻿@namespace LeakDetectionDashboard.Shared
+@using Microsoft.AspNetCore.Components
+
+<span class="@CssClass">
+    <span class="risk-dot"></span>
+    <span class="risk-label">@Label</span>
+    <span class="risk-value">@Percentage.ToString("F1")%</span>
+</span>
+
+@code {
+    [Parameter] public double Probability { get; set; }
+
+    // Clamp [0,1] then convert to percentage 0–100
+    private double Percentage => Math.Clamp(Probability, 0.0, 1.0) * 100.0;
+
+    private string Label
+    {
+        get
+        {
+            var p = Percentage;
+            return p switch
+            {
+                <= 20 => "Normal",
+                <= 40 => "High usage",
+                <= 60 => "Risk of leak",
+                <= 80 => "High possibility",
+                _ => "Leak"
+            };
+        }
+    }
+
+    private string CssClass
+    {
+        get
+        {
+            var p = Percentage;
+            return p switch
+            {
+                <= 20 => "risk-badge risk-normal",
+                <= 40 => "risk-badge risk-high-usage",
+                <= 60 => "risk-badge risk-risk",
+                <= 80 => "risk-badge risk-high",
+                _ => "risk-badge risk-leak"
+            };
+        }
+    }
+}

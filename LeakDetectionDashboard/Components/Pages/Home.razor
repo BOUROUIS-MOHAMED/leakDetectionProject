@@ -1,0 +1,20 @@
+﻿@page "/"
+@attribute [StreamRendering(true)]
+@inject NavigationManager Nav
+
+<PageTitle>Leak Detection Dashboard</PageTitle>
+
+<h3>Leak Detection Dashboard</h3>
+
+<p>Redirecting to Architecture view...</p>
+
+@code {
+    protected override void OnAfterRender(bool firstRender)
+    {
+        if (firstRender)
+        {
+            // Redirect root (/) to /architecture
+            Nav.NavigateTo("/architecture", true);
+        }
+    }
+}

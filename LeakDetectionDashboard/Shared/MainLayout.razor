@@ -1,0 +1,34 @@
+﻿@inherits LayoutComponentBase
+
+<div class="page">
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="sidebar-logo-circle">💧</div>
+            <div>
+                <div class="sidebar-app-name">LeakSense</div>
+                <div class="sidebar-app-subtitle">University water network</div>
+            </div>
+        </div>
+
+        <NavMenu />
+
+        <footer class="sidebar-footer">
+            <span class="sidebar-footer-pill">Demo · Kafka · ML.NET</span>
+        </footer>
+    </aside>
+
+    <main class="main-panel">
+        <header class="app-header">
+            <div>
+                <h1 class="app-title">Leak Detection Dashboard</h1>
+                <p class="app-subtitle">
+                    Streaming sensor data, anomaly detection and leak risk monitoring.
+                </p>
+            </div>
+        </header>
+
+        <section class="app-content">
+            @Body
+        </section>
+    </main>
+</div>

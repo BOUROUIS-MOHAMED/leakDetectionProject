@@ -1,0 +1,202 @@
+﻿@page "/history"
+@using LeakDetectionDashboard.Data
+@using LeakDetectionDashboard.Models
+@using LeakDetectionDashboard.Shared
+@using Microsoft.EntityFrameworkCore
+@inject AppDbContext Db
+
+<div class="page-header">
+    <div>
+        <h2 class="page-title">Sensor history</h2>
+        <p class="page-subtitle">
+            Last 5 hours of snapshots with leak probabilities and pressure/flow behaviour.
+        </p>
+    </div>
+
+    @if (_snapshots.Any())
+    {
+        <div class="page-header-metrics">
+            <div class="metric-pill">
+                <span class="metric-label">Snapshots</span>
+                <span class="metric-value">@_snapshots.Count</span>
+            </div>
+            <div class="metric-pill">
+                <span class="metric-label">Filtered</span>
+                <span class="metric-value">@_filteredSnapshots.Count</span>
+            </div>
+        </div>
+    }
+</div>
+
+<div class="card card-surface">
+    <div class="filters-row">
+        <div class="filter-field">
+            <label class="field-label" for="zoneSelect">Zone</label>
+            <select id="zoneSelect" @bind="SelectedZoneId" class="select-input">
+                <option value="">All zones</option>
+                @foreach (var z in _zones)
+                {
+                    <option value="@z.Id">@z.Name</option>
+                }
+            </select>
+        </div>
+
+        <div class="filter-field">
+            <label class="field-label" for="pipeSelect">Pipe</label>
+            <select id="pipeSelect" @bind="SelectedPipeId" class="select-input">
+                <option value="">All pipes</option>
+                @foreach (var p in _pipes)
+                {
+                    <option value="@p.Id">@p.Name</option>
+                }
+            </select>
+        </div>
+
+        <div class="filter-field">
+            <label class="field-label" for="sensorSelect">Sensor</label>
+            <select id="sensorSelect" @bind="SelectedSensorId" class="select-input">
+                <option value="">All sensors</option>
+                @foreach (var s in _sensors)
+                {
+                    <option value="@s.Id">@s.Name</option>
+                }
+            </select>
+        </div>
+    </div>
+
+    @if (!_filteredSnapshots.Any())
+    {
+        <p class="muted">No snapshots match the current filters.</p>
+    }
+    else
+    {
+        <div class="table-wrapper">
+            <table class="table history-table">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Zone</th>
+                        <th>Pipe</th>
+                        <th>Sensor</th>
+                        <th>Pressure</th>
+                        <th>Flow</th>
+                        <th>Δ Pressure / min</th>
+                        <th>Leak probability</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var row in _filteredSnapshots)
+                    {
+                        <tr class="@GetRowClass(row)">
+                            <td>@row.Timestamp.ToLocalTime().ToString("yyyy-MM-dd HH:mm")</td>
+                            <td>@row.Sensor?.Pipe?.Zone?.Name</td>
+                            <td>@row.Sensor?.Pipe?.Name</td>
+                            <td>@row.Sensor?.Name</td>
+                            <td>@row.PressureCurrent:F1</td>
+                            <td>@row.FlowRate:F1</td>
+                            <td>@row.PressureDropRate:F2</td>
+                            <td>
+                                <RiskBadge Probability="row.LeakProbability" />
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+</div>
+
+@code {
+    private List<Zone> _zones = new();
+    private List<Pipe> _pipes = new();
+    private List<Sensor> _sensors = new();
+    private List<SensorSnapshot> _snapshots = new();
+    private List<SensorSnapshot> _filteredSnapshots = new();
+
+    private string? _selectedZoneId;
+    private string? _selectedPipeId;
+    private string? _selectedSensorId;
+
+    public string? SelectedZoneId
+    {
+        get => _selectedZoneId;
+        set
+        {
+            _selectedZoneId = value;
+            ApplyFilters();
+        }
+    }
+
+    public string? SelectedPipeId
+    {
+        get => _selectedPipeId;
+        set
+        {
+            _selectedPipeId = value;
+            ApplyFilters();
+        }
+    }
+
+    public string? SelectedSensorId
+    {
+        get => _selectedSensorId;
+        set
+        {
+            _selectedSensorId = value;
+            ApplyFilters();
+        }
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        var cutoff = DateTime.UtcNow.AddHours(-5);
+
+        _zones = await Db.Zones.OrderBy(z => z.Id).ToListAsync();
+        _pipes = await Db.Pipes.OrderBy(p => p.Id).ToListAsync();
+        _sensors = await Db.Sensors.OrderBy(s => s.Id).ToListAsync();
+
+        _snapshots = await Db.SensorSnapshots
+            .Where(s => s.Timestamp >= cutoff)
+            .Include(s => s.Sensor)
+                .ThenInclude(se => se.Pipe)
+                    .ThenInclude(p => p.Zone)
+            .OrderByDescending(s => s.Timestamp)
+            .Take(500)
+            .ToListAsync();
+
+        ApplyFilters();
+    }
+
+    private void ApplyFilters()
+    {
+        IEnumerable<SensorSnapshot> query = _snapshots;
+
+        if (int.TryParse(_selectedZoneId, out var zId))
+        {
+            query = query.Where(s => s.ZoneId == zId);
+        }
+
+        if (int.TryParse(_selectedPipeId, out var pId))
+        {
+            query = query.Where(s => s.PipeId == pId);
+        }
+
+        if (int.TryParse(_selectedSensorId, out var sId))
+        {
+            query = query.Where(s => s.SensorId == sId);
+        }
+
+        _filteredSnapshots = query.ToList();
+    }
+
+    private string GetRowClass(SensorSnapshot snapshot)
+    {
+        var p = snapshot.LeakProbability;
+
+        if (p >= 0.8) return "row-leak row-leak-critical";
+        if (p >= 0.6) return "row-leak row-leak-high";
+        if (p >= 0.4) return "row-leak row-leak-medium";
+
+        return string.Empty;
+    }
+}

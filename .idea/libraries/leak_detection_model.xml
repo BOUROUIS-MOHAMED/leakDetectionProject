@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="leak_detection_model">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/LeakDetectionDashboard/Data/models/leak_detection_model.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
